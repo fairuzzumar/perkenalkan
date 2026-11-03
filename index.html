@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perkenalkan — Direktori Profil & Portofolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .card-info {
+      text-align: left;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .card-path {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .arrow {
+      color: var(--text-muted);
+      font-size: 1.2rem;
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="badge">Platform Portofolio</div>
+    <h1>Perkenalkan</h1>
+    <p class="subtitle">Wadah rekam jejak, kredensial profesional individu, serta profil resmi badan usaha.</p>
+
+    <div class="links-grid">
+      <!-- Portofolio Individu -->
+      <a href="/my/fairuzzumar" class="card">
+        <div class="card-info">
+          <div class="card-title">Profil Pribadi</div>
+          <div class="card-path">/my/fairuzzumar</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <!-- Portofolio Bisnis / Entitas -->
+      <a href="/biz/fairuzcompany" class="card">
+        <div class="card-info">
+          <div class="card-title">Entitas Bisnis & Usaha</div>
+          <div class="card-path">/biz/fairuzcompany</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <footer>
+      &copy; 2026 perkenalkan.my.id &bull; Seluruh hak cipta dilindungi.
+    </footer>
+  </main>
+
+</body>
+</html>
